@@ -7,7 +7,14 @@
 <body>
   <script>
     function toggleCompetences() {
-      const compSection = document.getElementById(id);
+      const compSection = document.getElementById('competences');
+      compSection.style.display =
+      compSection.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+    <script>
+    function togglefomation() {
+      const compSection = document.getElementById('formation');
       compSection.style.display =
       compSection.style.display === 'none' ? 'block' : 'none';
     }
@@ -19,13 +26,13 @@
   </header>
   <main>
     <section>
-      <h2 onclick="toggleCompetences(id)">Formation</h2>
+      <h2 onclick="toggleCompetences()">Formation</h2>
       <ul id="competences">
         <li>BTS SIO – Lycée X</li>
       </ul>
     </section>
     <section >
-      <h2 onclick="toggleCompetences(id)" >Compétences</h2>
+      <h2 onclick="togglefomation()" >Compétences</h2>
       <ul id="formation">
         <li>HTML, CSS, JavaScript</li>
       </ul>
