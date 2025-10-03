@@ -5,6 +5,13 @@
   <title>Mon CV</title>
 </head>
 <body>
+  <script>
+    function toggleCompetences() {
+      const compSection = document.getElementById('competences');
+      compSection.style.display =
+      compSection.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
   <header>
     <h1>Nom Prénom</h1>
     <img src="photo.jpg" alt="Photo de profil">
@@ -26,21 +33,3 @@
   </main>
 </body>
 </html>
-<script>
-
-function toggleCompetences() {
-
-const compSection = document.getElementById('competences');
-
-compSection.style.display =
-
-compSection.style.display === 'none' ? 'block' : 'none';
-
-}
-
-</script>
-
-
-
-
-
