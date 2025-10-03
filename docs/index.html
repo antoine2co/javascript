@@ -7,7 +7,7 @@
 <body>
   <script>
     function toggleCompetences() {
-      const compSection = document.getElementById('competences');
+      const compSection = document.getElementById('competences','comp');
       compSection.style.display =
       compSection.style.display === 'none' ? 'block' : 'none';
     }
@@ -26,13 +26,14 @@
     </section>
     <section >
       <h2 onclick="toggleCompetences()" >Compétences</h2>
-      <ul id="competences">
+      <ul id="comp">
         <li>HTML, CSS, JavaScript</li>
       </ul>
     </section>
   </main>
 </body>
 </html>
+
 
 
 
